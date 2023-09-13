@@ -11,11 +11,6 @@ This is a solution to the Single price grid component challenge on Frontend Ment
 ![Desktop Design](./design/desktop%20design.png)
 ![Mobile Design](./design/mobile%20design.png)
 
-## Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
   ### Built with
