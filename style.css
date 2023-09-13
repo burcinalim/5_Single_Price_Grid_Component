@@ -1,0 +1,228 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --light_cyan: hsl(179, 53%, 49%);
+    --bright_yellow: hsl(71, 73%, 54%);
+    --light_gray: hsl(204, 43%, 93%);
+    --grayish_blue: hsl(218, 22%, 67%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color:lightblue;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    width: 38rem;
+    height: 30rem;
+    display:grid;
+    grid-template-rows: 45% 55%;
+ 
+}
+.row-1{
+    padding: 1.3rem;
+    margin: 1rem;
+    width: 100%;
+    height: 45%;
+    
+}
+.join-our-community__header{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 1.4rem;
+    word-spacing: 0.1rem;
+}
+.join-our-community__subHeader{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--bright_yellow);
+    margin-bottom: 0.7rem;
+}
+.join-our-community p{
+    color: var(--grayish_blue);
+    line-height: 1.6rem;
+    font-size: 1.rem;
+    
+}
+
+
+.row-2{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.subs{
+    background-color:var(--cyan);
+    padding-top:2rem;
+    padding-left: 2rem;
+    width: 100%;
+    height: auto;
+    color: white;
+    border-bottom-left-radius: 0.4rem;
+}
+.subs-header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.per-month{
+    font-size: 1rem;
+    color: var(--light_gray);
+    position: relative;
+    top: -0.3rem;
+    left: 0.7rem;
+    font-weight: 200;
+}
+.subs p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+.why-us{
+    background-color:var(--light_cyan);
+    padding-top:2rem;
+    padding-left: 2rem;
+    width: 100%;
+    height: auto;
+    color: white;
+    border-bottom-right-radius: 0.4rem;
+    
+}
+.why-us__header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+.why-us__list{
+    list-style-type:none;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: var(--light_gray);
+}
+.sign-up-btn{
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--bright_yellow);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.footer{
+    position: relative;
+    bottom: -11rem;
+    
+}
+/*------------------- MOBILE DESIGN ------------------------------------------*/
+
+@media (max-width:600px){
+    .container{
+        width: 20rem;
+        height: 35rem;
+        display:grid;
+        grid-template-rows: auto auto auto;
+        border-radius: 0.4rem;
+    }
+    .row-1{
+        text-align: left;
+        padding-left: 0.5rem;
+
+    }
+    .join-our-community__header{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .join-our-community__subHeader{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.7rem;
+    }
+    .join-our-community p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    
+    .row-2{
+        display: block;
+    }
+    
+    .subs{
+        padding-top:1.5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    .subs-header{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.9rem;
+        margin-top: -0.5rem;
+    }
+    .price{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .per-month{
+        font-size: 0.8rem;
+        position: relative;
+        top: -0.2rem;
+        left: 0.7rem;
+    }
+    .subs p{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .sign-up-btn{
+        width: 90%;
+        height: 2.4rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+    .why-us{
+        padding-top:1.5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom-left-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        
+        
+    }
+    .why-us__header{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        margin-top: -0.5rem;
+    }
+    .why-us__list{
+        line-height: 1rem;
+        font-size: 0.7rem;
+    
+    }
+   
+}
+
+    
